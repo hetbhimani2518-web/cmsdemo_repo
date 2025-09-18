@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    tools:context=".register_student"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="@color/light_gray_shap_card"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/fcreg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/student_registration"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/st_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fcreg_tv" />
+
+        <EditText
+            android:id="@+id/et_st_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_name" />
+
+        <TextView
+            android:id="@+id/st_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_st_name" />
+
+        <EditText
+            android:id="@+id/et_st_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/select_date_of_birth"
+            android:minHeight="48dp"
+            android:textColor="@color/dark_text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_dob" />
+
+        <TextView
+            android:id="@+id/st_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_st_dob" />
+
+        <Spinner
+            android:id="@+id/sp_st_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender_array"
+            android:minHeight="48dp"
+            android:textColor="@color/dark_text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_gender" />
+
+        <TextView
+            android:id="@+id/st_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sp_st_gender" />
+
+        <EditText
+            android:id="@+id/et_st_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_address"
+            android:inputType="text"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_address" />
+
+        <TextView
+            android:id="@+id/st_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_no"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_st_address" />
+
+        <EditText
+            android:id="@+id/et_st_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_contact_no"
+            android:inputType="phone"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_contact" />
+
+
+        <TextView
+            android:id="@+id/st_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email_address"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_st_contact" />
+
+        <EditText
+            android:id="@+id/et_st_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email_address"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_email" />
+
+        <TextView
+            android:id="@+id/st_program"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/program_of_study"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_st_email" />
+
+        <Spinner
+            android:id="@+id/sp_st_program"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/program_array"
+            android:minHeight="48dp"
+            android:textColor="@color/dark_text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_program" />
+
+        <TextView
+            android:id="@+id/st_year_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/year_semester"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sp_st_program" />
+
+        <Spinner
+            android:id="@+id/sp_st_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/year_semester_array"
+            android:minHeight="48dp"
+            android:textColor="@color/dark_text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_year_semester" />
+
+        <Spinner
+            android:id="@+id/sp_st_year_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textColor="@color/dark_text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sp_st_year" />
+
+<!--        -&#45;&#45;Division-->
+        <TextView
+            android:id="@+id/st_division"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/division"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sp_st_year_semester" />
+
+        <Spinner
+            android:id="@+id/sp_st_divison"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/division_array"
+            android:minHeight="48dp"
+            android:textColor="@color/dark_text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_division" />
+
+        <TextView
+            android:id="@+id/st_roll_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/roll_number"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sp_st_divison" />
+
+        <EditText
+            android:id="@+id/et_st_roll_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_roll_number"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_roll_number" />
+
+        <TextView
+            android:id="@+id/st_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_st_roll_number" />
+
+        <EditText
+            android:id="@+id/et_st_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_password" />
+
+        <!-- Confirm Password -->
+        <TextView
+            android:id="@+id/st_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_st_password" />
+
+        <EditText
+            android:id="@+id/et_st_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_confirm_password" />
+
+        <Button
+            android:id="@+id/btn_register_stud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_st_confirm_password" />
+
+        <TextView
+            android:id="@+id/st_return_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/already_sign_up_please_log_in"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_register_stud" />
+
+        <Button
+            android:id="@+id/btn_return_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/st_return_login" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
