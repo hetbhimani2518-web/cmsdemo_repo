@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Assignment Title -->
+        <TextView
+            android:id="@+id/tvAssignmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📘 Assignment Title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Deadline -->
+        <TextView
+            android:id="@+id/tvDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏰ Deadline: 01/01/2025"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Program | Year | Semester | Division -->
+        <TextView
+            android:id="@+id/tvProgramDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎓 BCA | Year 3 | Semester 6 | Division A"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Description -->
+<!--        <TextView-->
+<!--            android:id="@+id/tvAssignmentDesc"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="📝 Description: Complete chapter 3 , 4"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginBottom="10dp" />-->
+
+        <!-- Open Drive Link Button -->
+        <Button
+            android:id="@+id/btnViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

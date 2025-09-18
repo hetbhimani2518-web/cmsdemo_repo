@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notice Title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_notice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Notice content here"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_faculty_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Faculty Name"
+            android:textColor="@color/dark_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_notice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Date"
+            android:textColor="@color/dark_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--        &lt;!&ndash; Notice Title &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvNoticeTitle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Notice Title"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        &lt;!&ndash; Faculty & Date &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvFacultyName"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:text="From: Faculty Name"-->
+        <!--            android:textColor="@color/dark_text"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvNoticeDate"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:text="Received on: 12/02/2024"-->
+        <!--            android:textColor="@color/dark_text"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        &lt;!&ndash; Notice Content &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvNoticeContent"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:text="This is the main content of the notice."-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
